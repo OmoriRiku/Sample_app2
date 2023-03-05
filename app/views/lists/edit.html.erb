@@ -1,0 +1,9 @@
+<%= form_with model: @list, url:update_list_path(@list), method: :patch do |f| %>
+  <%= f.label :title, class: "d-block mb-2" %>
+  <%= f.text_field :title, class: "d-block mb-2" %>
+  <%= f.label :body, class: "d-block mb-2" %>
+  <%= f.text_area :body, class: "d-block mb-2" %>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <%= f.submit '更新する' %>
+<% end %>
