@@ -1,0 +1,8 @@
+<h2>新規投稿</h2>
+<%= form_with model:@list do |f| %>
+  <%= f.label :title, "タイトル", class: "d-block mb-2" %>
+  <%= f.text_field :title, class: "d-block mb-2" %>
+  <%= f.label :body, "本文", class: "d-block mb-2" %>
+  <%= f.text_area :body, class: "d-block mb-2" %>
+  <%= f.submit '投稿する' %>
+<% end %>
